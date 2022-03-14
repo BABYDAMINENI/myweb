@@ -6,7 +6,7 @@ pipeline{
     stages{
         stage("cloning code from github"){
             steps{
-                git credentialsId: 'jenkins_Credentials', url: 'https://github.com/BABYDAMINENI/simple-app.git'
+                git credentialsId: 'jenkins_Credentials', url: 'https://github.com/BABYDAMINENI/myweb.git'
             }
         }
         stage("Build Using Maven"){
